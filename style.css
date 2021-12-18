@@ -1,0 +1,118 @@
+*{margin: 0; padding: 0;}
+html {
+    height: 100vh;
+}
+body {
+    height: 100%;
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{text-decoration: none;}
+.instagram-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.instagram-continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+}
+#perfil {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 125px;
+    width: 125px;
+}
+.instagram-phone {
+    width: 50%;
+}
+.instagram-phone img{
+    max-height: 50rem;
+}
+.group {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1.3rem 1.6rem;
+}
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+.instagram-button {
+    background-color: #0095f6;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.instagram-link {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    font-size: 12px;
+    color: #8e8e8e;
+    margin: 15px;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.group span {
+    color: #6d6d6d;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.download-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.download-buttons img{
+    max-width: 150px;
+    max-height: 40px;
+}
+
+@media (max-width: 1350px)
+{
+  .instagram-phone{
+    display: none;
+   }
+   .group, .download {
+       width: 80%;
+   }
+}
